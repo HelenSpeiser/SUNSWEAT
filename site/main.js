@@ -1,3 +1,20 @@
+// Phone menu: the toggle button opens and closes the nav below the header.
+(function () {
+  function setup() {
+    var header = document.querySelector('.site-header');
+    var toggle = header && header.querySelector('.menu-toggle');
+    if (!toggle) return;
+    toggle.addEventListener('click', function () {
+      header.classList.toggle('is-open');
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setup);
+  } else {
+    setup();
+  }
+})();
+
 // Scroll "bloom" reveal.
 // [data-bloom="open"]  — opens outward from a small circle while scaling up (images, quote).
 // [data-bloom="rise"]  — rises and settles (text blocks, cards).

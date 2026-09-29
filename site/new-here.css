@@ -100,3 +100,12 @@
 .acc-bullet { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px; align-items: start; }
 .acc-bullet__diamond { width: 9px; height: 9px; margin-top: 8px; }
 .acc-bullet__text { font-weight: 300; font-size: 15px; line-height: 1.72; color: var(--acc-body); }
+
+/* ---------- Phone layout ---------- */
+@media (max-width: 760px) {
+  .steps { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .expect__grid { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; grid-auto-flow: row; }
+}
+@media (max-width: 760px) {
+  .welcome__logo { height: 26px; }
+}

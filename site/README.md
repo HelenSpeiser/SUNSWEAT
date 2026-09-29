@@ -25,8 +25,12 @@ To deploy, upload the contents of `site/` to any static host (Netlify, Vercel, S
 | `about.html` | About | `about.css` |
 
 - `styles.css`: shared styles (brand colours and fonts, header, gold buttons, hero and wave divider, scrolling band, footer) plus the homepage sections. Every page loads it first, then its own CSS file.
-- `main.js`: the scroll "bloom" reveal. Elements with `data-bloom="rise"` rise into place and elements with `data-bloom="open"` open from a circle as they scroll into view. It's used on Home and The Method.
+- `main.js`: the phone menu toggle (every page) and the scroll "bloom" reveal. Elements with `data-bloom="rise"` rise into place and elements with `data-bloom="open"` open from a circle as they scroll into view. The reveal is used on Home and The Method.
 - `assets/`: images, logos and the brand fonts (MADE Mirage, Avenir Next). Check that the font licences cover web use before launch.
+
+## Phones and tablets
+
+The designs covered desktop only, so small-screen layouts were added with the client's approval, inside `@media` blocks at the end of each CSS file. Desktop is unchanged. At 860px and below, the nav folds into a menu button that opens a dropdown on the right. At 760px and below, multi-column sections stack into one column.
 
 ## Still to do before launch
 
@@ -34,4 +38,3 @@ To deploy, upload the contents of `site/` to any static host (Netlify, Vercel, S
 - **Contact form:** the form on `about.html` is visual only and needs a form handler or service.
 - **Rhonda's photo:** it's a labelled placeholder on `about.html`.
 - **Placeholder links:** the social links (Instagram, Facebook, TikTok) and Privacy Policy / Terms of Service in the footer point to `#`.
-- **Phone layouts:** the designs have no small-screen layouts, so most pages keep their desktop column layout on phones. On The Method, some buttons are cut off at phone width. Classes has one extra small-screen rule, in `classes.css`.

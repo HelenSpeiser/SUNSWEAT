@@ -110,3 +110,10 @@
 .acc[open] .acc-chevron { transform: rotate(180deg); }
 .acc__panel { padding: 0 0 clamp(20px, 2.2vw, 28px); }
 .acc__text { font-weight: 300; font-size: 15px; line-height: 1.75; color: #4a443e; max-width: 74ch; text-wrap: pretty; }
+
+/* ---------- Phone layout ---------- */
+@media (max-width: 760px) {
+  .marquee--pricing .marquee__item { font-size: 24px; }
+  .marquee--pricing .marquee__diamond { width: 11px; height: 11px; }
+  .plan__seal { left: -8px; }
+}
