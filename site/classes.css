@@ -1,0 +1,106 @@
+/* SUNSWEAT — Classes page (loads after styles.css) */
+
+/* ---------- Title block ---------- */
+.classes-intro { background: var(--bg); padding: clamp(48px, 6vw, 88px) clamp(24px, 5vw, 88px) clamp(28px, 3vw, 44px); }
+.classes-intro__inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: clamp(20px, 2.2vw, 30px);
+}
+.classes-intro__title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(44px, 5.4vw, 86px);
+  line-height: 1.02;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+.divider { display: flex; align-items: center; gap: 12px; }
+.divider__rule { display: block; width: clamp(48px, 5vw, 74px); height: 1px; background: #c9a86f; }
+.divider__diamond { width: 10px; height: 10px; }
+.classes-intro__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4a443e;
+  max-width: 78ch;
+  text-wrap: pretty;
+}
+
+/* ---------- Class rows ---------- */
+.class-list { background: var(--bg); padding: 0 clamp(24px, 5vw, 88px) clamp(72px, 8vw, 112px); }
+.class-list__inner { max-width: 1180px; margin: 0 auto; }
+.class-list__cta { display: flex; justify-content: center; padding-bottom: clamp(28px, 3vw, 44px); }
+.class-list__btn { font-size: 13px; letter-spacing: 0.16em; padding: 13px 34px; }
+
+.class-row {
+  display: grid;
+  grid-template-columns: clamp(120px, 13vw, 176px) minmax(180px, 0.85fr) minmax(0, 1.25fr) auto;
+  gap: clamp(20px, 3vw, 48px);
+  align-items: center;
+  padding: clamp(26px, 3vw, 42px) 0;
+  border-top: 1px solid #ddd0c1;
+}
+.class-row__photo { position: relative; aspect-ratio: 3 / 4; border-radius: 999px 999px 8px 8px; overflow: hidden; }
+.class-row__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.class-row__img--build { object-position: center 35%; }
+.class-row__img--refine { object-position: center 30%; }
+.class-row__img--elevate { object-position: center 40%; }
+.class-row__head { display: flex; flex-direction: column; gap: 8px; }
+.class-row__title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(24px, 2.5vw, 34px);
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+.class-row__meta { font-weight: 500; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); }
+.class-row__text { font-weight: 300; font-size: 14.5px; line-height: 1.75; color: var(--muted); text-wrap: pretty; }
+.class-row__arrow {
+  width: clamp(42px, 3.6vw, 52px);
+  height: clamp(42px, 3.6vw, 52px);
+  border-radius: 50%;
+  border: 1px solid #c9b69c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: var(--gold);
+  flex: 0 0 auto;
+}
+.class-row__arrow:hover { background: var(--gold); border-color: var(--gold); color: #fff; }
+
+/* The prototype defines no narrow layout; below 640px its 4-column row squeezes the
+   description to a sliver, so the description drops under the photo/name/arrow. */
+@media (max-width: 640px) {
+  .class-row { grid-template-columns: 96px minmax(0, 1fr) auto; column-gap: 20px; row-gap: 20px; }
+  .class-row__text { grid-column: 1 / -1; grid-row: 2; }
+}
+
+/* ---------- Schedule ---------- */
+.schedule {
+  background: linear-gradient(180deg, #f0e9e3 0%, #e4cfb9 16%, #efe1d0 46%, #fbf7f2 78%, #fffdfa 100%);
+  padding: clamp(64px, 7vw, 100px) clamp(24px, 5vw, 88px);
+}
+.schedule__inner { max-width: 1180px; margin: 0 auto; display: flex; flex-direction: column; gap: clamp(28px, 3vw, 44px); }
+.schedule__head { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; }
+.schedule__eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.32em; text-transform: uppercase; color: var(--gold); }
+.schedule__title { font-family: var(--serif); font-weight: 200; font-size: clamp(30px, 3.4vw, 48px); line-height: 1.2; color: var(--ink); }
+.schedule__embed {
+  min-height: 560px;
+  border: 1px dashed #c9b69c;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.schedule__placeholder { font-weight: 300; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #8c8177; }
+
+/* ---------- Footer: fades up from the schedule's near-white ---------- */
+.site-footer--fade { background: linear-gradient(180deg, #fffdfa 0px, #f0e9e3 170px); }
