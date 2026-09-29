@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+@font-face{font-family:"Mirage";src:url("assets/fonts/MADEMirage-Thin.otf") format("opentype");font-weight:200;font-display:swap;}
+@font-face{font-family:"Mirage";src:url("assets/fonts/MADEMirage-Regular.otf") format("opentype");font-weight:400;font-display:swap;}
+@font-face{font-family:"Mirage";src:url("assets/fonts/MADEMirage-Medium.otf") format("opentype");font-weight:500;font-display:swap;}
+@font-face{font-family:"Avenir";src:url("assets/fonts/AvenirNext-Light.woff2") format("woff2");font-weight:300;font-display:swap;}
+@font-face{font-family:"Avenir";src:url("assets/fonts/AvenirNext-Regular.woff2") format("woff2");font-weight:400;font-display:swap;}
+@font-face{font-family:"Avenir";src:url("assets/fonts/AvenirNext-Medium.woff2") format("woff2");font-weight:500;font-display:swap;}
+@font-face{font-family:"Avenir";src:url("assets/fonts/AvenirNext-Demi.woff2") format("woff2");font-weight:600;font-display:swap;}
+html,body{margin:0;padding:0;background:#f0e9e3;}
+*{box-sizing:border-box;}
+a{color:#1c1d1d;text-decoration:none;}
+a:hover{color:#d09749;}
+.warmwash{position:relative;background:linear-gradient(180deg,#f0e9e3 0%,#e4cfb9 14%,#e9d8c4 34%,#f4ece2 58%,#fcf9f5 78%,#fffdfa 100%);}
+.warmwash > *{position:relative;z-index:1;}
+
+</style>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect width="400" height="300" fill="#f0e9e3"></rect><circle cx="200" cy="150" r="72" fill="none" stroke="#af8431" stroke-width="3"></circle><text x="200" y="176" text-anchor="middle" font-family="Georgia, serif" font-size="76" fill="#af8431">SS</text></svg></template>
+
+</helmet>
+
+<div style="background:#f0e9e3;font-family:Avenir, sans-serif;color:#1c1d1d;overflow-x:clip">
+
+  <header style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px 40px;padding:20px clamp(20px,3vw,56px);background:#f0e9e3">
+    <a href="Sunsweat Homepage.dc.html" style="display:flex;align-items:center;gap:clamp(12px,1.6vw,22px);flex:0 1 auto;min-width:0">
+      <img src="assets/mark-metal.svg" alt="SUNSWEAT" style="height:clamp(46px,5vw,70px);width:auto;display:block;flex:0 0 auto" />
+      <img src="assets/wordmark-luxor.svg" alt="SUNSWEAT — Strength in Every Season" style="height:clamp(34px,3.7vw,52px);width:auto;display:block;min-width:0;max-width:100%" />
+    </a>
+    <nav style="display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:14px clamp(18px,2.4vw,40px);flex:1 1 auto">
+      <a href="#" style="font-family:Avenir, sans-serif;font-size:clamp(12px,1.05vw,14px);font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#1c1d1d;white-space:nowrap" style-hover="color:#d09749">The Method</a>
+      <a href="Classes.dc.html" style="font-family:Avenir, sans-serif;font-size:clamp(12px,1.05vw,14px);font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#1c1d1d;white-space:nowrap" style-hover="color:#d09749">Classes</a>
+      <a href="New%20Here.dc.html" style="font-family:Avenir, sans-serif;font-size:clamp(12px,1.05vw,14px);font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#1c1d1d;white-space:nowrap" style-hover="color:#d09749">New Here</a>
+      <a href="Pricing.dc.html" style="font-family:Avenir, sans-serif;font-size:clamp(12px,1.05vw,14px);font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#1c1d1d;white-space:nowrap" style-hover="color:#d09749">Pricing</a>
+      <a href="About.dc.html" style="font-family:Avenir, sans-serif;font-size:clamp(12px,1.05vw,14px);font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#1c1d1d;white-space:nowrap" style-hover="color:#d09749">About</a>
+      <a href="Classes.dc.html" style="background:linear-gradient(100deg,#8f6c28 0%,#c39a44 10%,#f0d79a 22%,#b98d36 36%,#9a7429 50%,#c9a34d 64%,#f3dca6 76%,#b78a34 90%,#8a6725 100%);border-radius:999px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.42), inset 0 -1px 0 rgba(28,29,29,0.22);text-shadow:0 1px 1px rgba(96,70,20,0.45);color:#ffffff;font-family:Avenir, sans-serif;font-size:clamp(12px,1.05vw,14px);font-weight:600;letter-spacing:0.11em;text-transform:uppercase;padding:12px clamp(22px,2.4vw,32px);white-space:nowrap;flex:0 0 auto" style-hover="filter:brightness(1.07);color:#ffffff">Book a Class</a>
+    </nav>
+  </header>
+
+  <section style="position:relative;height:65vh;min-height:465px;width:100%;overflow:hidden">
+    <img src="assets/method-hero.png" alt="SUNSWEAT members training with dumbbells" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%" />
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(28,29,29,0.34) 0%, rgba(28,29,29,0.2) 45%, rgba(28,29,29,0.06) 75%)"></div>
+
+    <div style="position:relative;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 24px min(14vh,120px);text-align:center">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:clamp(10px,1.2vw,20px)">
+        <span style="font-family:Mirage, serif;font-weight:400;color:#ffffff;font-size:clamp(46px,5.8vw,92px);line-height:1.02;letter-spacing:0.005em;text-shadow:0 2px 28px rgba(28,29,29,0.22)">THE</span>
+        <img src="assets/wordmark-only-white.svg" alt="SUNSWEAT" style="height:clamp(30px,3.6vw,56px);width:auto;max-width:100%;display:block;filter:drop-shadow(0 2px 20px rgba(28,29,29,0.28))" />
+        <span style="font-family:Mirage, serif;font-weight:400;color:#ffffff;font-size:clamp(46px,5.8vw,92px);line-height:1.02;letter-spacing:0.005em;text-shadow:0 2px 28px rgba(28,29,29,0.22)">SIGNATURE METHOD</span>
+      </div>
+    </div>
+
+    <svg viewBox="0 0 1440 240" preserveAspectRatio="none" style="position:absolute;left:0;right:0;bottom:-1px;width:100%;height:min(26vh,230px);display:block">
+      <path d="M0,118 C230,34 430,188 720,138 C1000,90 1185,8 1440,86 L1440,241 L0,241 Z" fill="#e4dad0" opacity="0.65"></path>
+      <path d="M0,158 C260,86 480,222 782,168 C1044,120 1224,56 1440,128 L1440,241 L0,241 Z" fill="#ece5dd"></path>
+      <path d="M0,198 C300,136 520,246 824,204 C1084,168 1252,116 1440,172 L1440,241 L0,241 Z" fill="#f0e9e3"></path>
+    </svg>
+  </section>
+
+  <section style="background:#f0e9e3;padding:clamp(24px,4vw,56px) clamp(24px,5vw,88px) clamp(56px,6vw,88px)">
+    <div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(20px,2.2vw,30px)">
+      <span style="font-family:Avenir, sans-serif;font-size:12px;font-weight:600;letter-spacing:0.32em;text-transform:uppercase;color:#af8431">Our approach</span>
+      <h2 style="font-family:Mirage, serif;font-weight:200;font-size:clamp(26px,2.9vw,42px);line-height:1.24;color:#1c1d1d;margin:0;max-width:100%;text-wrap:pretty">Build a stronger, healthier, more capable body<br />through every season of life</h2>
+      <div style="display:flex;align-items:center;gap:12px"><div style="width:clamp(48px,5vw,74px);height:1px;background:#c9a86f"></div><img src="assets/diamond-gold.svg" alt="" style="width:10px;height:10px;display:block" /><div style="width:clamp(48px,5vw,74px);height:1px;background:#c9a86f"></div></div>
+      <p style="font-family:Avenir, sans-serif;font-weight:300;font-size:15.5px;line-height:1.8;color:#4a443e;margin:6px 0 0;max-width:100%;text-wrap:pretty">Built on three essential pillars—Strength, Precision, and Performance—our method combines progressive strength training, controlled movement, and athletic conditioning into one balanced training system. Because your body and goals evolve, your training should too. Whether you’re developing strength, refining movement, or elevating performance, SUNSWEAT provides a clear path to meaningful progress. Rather than offering random workouts, every class has a purpose. Our coaches provide expert guidance while our programming gives you the framework to train intelligently, move with precision, and progress with purpose over time.</p>
+    </div>
+  </section>
+
+  <section style="background:#f0e9e3;padding:0 clamp(24px,5vw,88px) clamp(80px,9vw,132px)">
+    <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,0.95fr);gap:clamp(36px,5vw,76px);align-items:stretch">
+      <div>
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:clamp(24px,3vw,38px)">
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font-family:Avenir, sans-serif;font-size:12px;font-weight:600;letter-spacing:0.32em;text-transform:uppercase;color:#af8431">The pillars</span>
+            <h2 style="font-family:Mirage, serif;font-weight:200;font-size:clamp(28px,3vw,42px);line-height:1.2;color:#1c1d1d;margin:0;white-space:nowrap">Our Three Pillars</h2>
+          </div>
+          <a href="Classes.dc.html" style="background:linear-gradient(100deg,#8f6c28 0%,#c39a44 10%,#f0d79a 22%,#b98d36 36%,#9a7429 50%,#c9a34d 64%,#f3dca6 76%,#b78a34 90%,#8a6725 100%);border-radius:999px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.42), inset 0 -1px 0 rgba(28,29,29,0.22);text-shadow:0 1px 1px rgba(96,70,20,0.45);color:#ffffff;font-family:Avenir, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;padding:10px 20px;white-space:nowrap;flex:0 0 auto" style-hover="filter:brightness(1.07);color:#ffffff">View Classes</a>
+        </div>
+        <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(16px,2vw,30px);align-items:start;padding:clamp(22px,2.4vw,30px) 0;border-top:1px solid #ddd0c1">
+          <span style="font-family:Avenir, sans-serif;font-weight:400;font-size:12px;letter-spacing:0.18em;color:#a2988d;padding-top:6px">01</span>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <h3 style="font-family:Mirage, serif;font-weight:500;font-size:clamp(20px,1.9vw,26px);letter-spacing:0.06em;color:#1c1d1d;margin:0">STRENGTH</h3>
+            <p style="font-family:Avenir, sans-serif;font-weight:300;font-size:14.5px;line-height:1.72;color:#5b544d;margin:0;max-width:46ch;text-wrap:pretty">Develop lean muscle, increase power, and build lasting strength through progressive resistance training.</p>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(16px,2vw,30px);align-items:start;padding:clamp(22px,2.4vw,30px) 0;border-top:1px solid #ddd0c1">
+          <span style="font-family:Avenir, sans-serif;font-weight:400;font-size:12px;letter-spacing:0.18em;color:#a2988d;padding-top:6px">02</span>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <h3 style="font-family:Mirage, serif;font-weight:500;font-size:clamp(20px,1.9vw,26px);letter-spacing:0.06em;color:#1c1d1d;margin:0">PRECISION</h3>
+            <p style="font-family:Avenir, sans-serif;font-weight:300;font-size:14.5px;line-height:1.72;color:#5b544d;margin:0;max-width:46ch;text-wrap:pretty">Improve core strength, stability, balance, posture, and muscular endurance through controlled, precise movement.</p>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(16px,2vw,30px);align-items:start;padding:clamp(22px,2.4vw,30px) 0;border-top:1px solid #ddd0c1">
+          <span style="font-family:Avenir, sans-serif;font-weight:400;font-size:12px;letter-spacing:0.18em;color:#a2988d;padding-top:6px">03</span>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <h3 style="font-family:Mirage, serif;font-weight:500;font-size:clamp(20px,1.9vw,26px);letter-spacing:0.06em;color:#1c1d1d;margin:0">PERFORMANCE</h3>
+            <p style="font-family:Avenir, sans-serif;font-weight:300;font-size:14.5px;line-height:1.72;color:#5b544d;margin:0;max-width:46ch;text-wrap:pretty">Enhance endurance, power, coordination, and athleticism through dynamic, functional training.</p>
+          </div>
+        </div>
+      </div>
+      <div style="position:relative;height:100%;min-height:420px;border-radius:6px;overflow:hidden"><img src="assets/method-detail.jpg" alt="SUNSWEAT class in session" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 32%;display:block" /></div>
+    </div>
+  </section>
+
+  <section class="warmwash" style="padding:clamp(72px,8vw,112px) clamp(24px,5vw,88px)">
+    <div style="max-width:1180px;margin:0 auto">
+      <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;margin-bottom:clamp(40px,4.6vw,64px)">
+        <span style="font-family:Avenir, sans-serif;font-size:12px;font-weight:600;letter-spacing:0.32em;text-transform:uppercase;color:#af8431">The classes</span>
+        <h2 style="font-family:Mirage, serif;font-weight:200;font-size:clamp(30px,3.4vw,48px);line-height:1.2;color:#1c1d1d;margin:0">The method in practice</h2>
+      </div>
+      <div class="practicegrid" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.6vw,22px)">
+        <div data-bloom="rise" style="background:#9cb6ae;border-radius:14px;padding:clamp(22px,2.4vw,34px);display:flex;flex-direction:column;justify-content:space-between;gap:16px">
+          <div style="display:flex;flex-direction:column;gap:2px">
+            <h3 style="font-family:Mirage, serif;font-weight:500;font-size:clamp(24px,2.4vw,32px);letter-spacing:0.07em;color:#1c1d1d;margin:0">BUILD</h3>
+            <span style="font-family:Mirage, serif;font-style:italic;font-weight:400;font-size:18px;color:#5c3f0d">Strength</span>
+            <p style="font-family:Avenir, sans-serif;font-weight:300;font-size:13.5px;line-height:1.65;color:#23302c;margin:8px 0 0;text-wrap:pretty">Designed to develop lean muscle, increase power, and build lasting strength. Expect upper body, lower body, and full-body training that challenges you to lift stronger, move better, and make measurable progress.</p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:18px;align-items:flex-start">
+            <span style="font-family:Avenir, sans-serif;font-weight:400;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#2b3a35">Gentle Heat &nbsp;•&nbsp; 45 Minutes</span>
+            <a href="Classes.dc.html" style="font-family:Avenir, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#1c1d1d;border:1px solid #1c1d1d;border-radius:999px;padding:11px 24px;display:inline-flex;align-items:center;gap:10px;white-space:nowrap" style-hover="background:#1c1d1d;color:#ffffff;border-color:#1c1d1d">Book a Class <span style="font-family:Avenir, sans-serif;font-size:13px">&rarr;</span></a>
+          </div>
+        </div>
+        <div data-bloom="open" style="position:relative;border-radius:14px;overflow:hidden;width:100%;height:100%;min-height:260px"><img src="assets/class-build-photo.jpg" alt="Member training with dumbbells" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block" /></div>
+        <div data-bloom="rise" style="background:#9cb6ae;border-radius:14px;padding:clamp(22px,2.4vw,34px);display:flex;flex-direction:column;justify-content:space-between;gap:16px">
+          <div style="display:flex;flex-direction:column;gap:2px">
+            <h3 style="font-family:Mirage, serif;font-weight:500;font-size:clamp(24px,2.4vw,32px);letter-spacing:0.07em;color:#1c1d1d;margin:0">REFINE</h3>
+            <span style="font-family:Mirage, serif;font-style:italic;font-weight:400;font-size:18px;color:#5c3f0d">Precision</span>
+            <p style="font-family:Avenir, sans-serif;font-weight:300;font-size:13.5px;line-height:1.65;color:#23302c;margin:8px 0 0;text-wrap:pretty">Inspired by the precision of Pilates and elevated through modern strength training, this full-body class develops core strength, stability, balance, posture, and muscular endurance through controlled movement.</p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:18px;align-items:flex-start">
+            <span style="font-family:Avenir, sans-serif;font-weight:400;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#2b3a35">Gentle Heat &nbsp;•&nbsp; 45 Minutes</span>
+            <a href="Classes.dc.html" style="font-family:Avenir, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#1c1d1d;border:1px solid #1c1d1d;border-radius:999px;padding:11px 24px;display:inline-flex;align-items:center;gap:10px;white-space:nowrap" style-hover="background:#1c1d1d;color:#ffffff;border-color:#1c1d1d">Book a Class <span style="font-family:Avenir, sans-serif;font-size:13px">&rarr;</span></a>
+          </div>
+        </div>
+        <div data-bloom="open" style="position:relative;border-radius:14px;overflow:hidden;width:100%;height:100%;min-height:260px"><img src="assets/class-refine-photo.jpg" alt="Member in a weighted squat" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block" /></div>
+        <div data-bloom="rise" style="background:#9cb6ae;border-radius:14px;padding:clamp(22px,2.4vw,34px);display:flex;flex-direction:column;justify-content:space-between;gap:16px">
+          <div style="display:flex;flex-direction:column;gap:2px">
+            <h3 style="font-family:Mirage, serif;font-weight:500;font-size:clamp(24px,2.4vw,32px);letter-spacing:0.07em;color:#1c1d1d;margin:0">ELEVATE</h3>
+            <span style="font-family:Mirage, serif;font-style:italic;font-weight:400;font-size:18px;color:#5c3f0d">Performance</span>
+            <p style="font-family:Avenir, sans-serif;font-weight:300;font-size:13.5px;line-height:1.65;color:#23302c;margin:8px 0 0;text-wrap:pretty">This high-energy class combines cardio, strength, agility, and power through dynamic intervals and functional movement. Expect an athletic, full-body workout designed to build cardiovascular endurance.</p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:18px;align-items:flex-start">
+            <span style="font-family:Avenir, sans-serif;font-weight:400;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#2b3a35">Heated &nbsp;•&nbsp; 45–60 Minutes</span>
+            <a href="Classes.dc.html" style="font-family:Avenir, sans-serif;font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#1c1d1d;border:1px solid #1c1d1d;border-radius:999px;padding:11px 24px;display:inline-flex;align-items:center;gap:10px;white-space:nowrap" style-hover="background:#1c1d1d;color:#ffffff;border-color:#1c1d1d">Book a Class <span style="font-family:Avenir, sans-serif;font-size:13px">&rarr;</span></a>
+          </div>
+        </div>
+        <div data-bloom="open" style="position:relative;border-radius:14px;overflow:hidden;width:100%;height:100%;min-height:260px"><img src="assets/class-elevate-photo.jpg" alt="Member mid box jump" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block" /></div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:linear-gradient(180deg,#fffdfa 0px,#f0e9e3 170px);padding:clamp(56px,6vw,88px) clamp(24px,5vw,88px) clamp(36px,4vw,56px)">
+    <div style="max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:48px">
+
+      <div style="display:flex;flex-direction:column;gap:26px;flex:0 1 auto">
+        <div style="display:flex;align-items:center;gap:18px">
+          <img src="assets/mark-gold.svg" alt="SUNSWEAT" style="height:58px;width:auto;display:block" />
+          <img src="assets/wordmark-dark.svg" alt="SUNSWEAT — Strength in Every Season" style="height:44px;width:auto;display:block" />
+        </div>
+        <div style="display:flex;align-items:center;gap:26px">
+          <a href="#" style="font-family:Avenir, sans-serif;font-size:12px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:#1c1d1d" style-hover="color:#af8431">Instagram</a>
+          <a href="#" style="font-family:Avenir, sans-serif;font-size:12px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:#1c1d1d" style-hover="color:#af8431">Facebook</a>
+          <a href="#" style="font-family:Avenir, sans-serif;font-size:12px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:#1c1d1d" style-hover="color:#af8431">TikTok</a>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:10px;flex:0 1 auto">
+        <span style="font-family:Avenir, sans-serif;font-size:12px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:#af8431;margin-bottom:6px">Visit</span>
+        <span style="font-family:Avenir, sans-serif;font-weight:300;font-size:15px;line-height:1.6;color:#1c1d1d">1039 Haskins Road, Bowling Green, OH 43402</span>
+        <a href="mailto:move@sunsweatstudio.com" style="font-family:Avenir, sans-serif;font-weight:300;font-size:15px;line-height:1.6;color:#1c1d1d" style-hover="color:#af8431">move@sunsweatstudio.com</a>
+        <a href="tel:4193457272" style="font-family:Avenir, sans-serif;font-weight:300;font-size:15px;line-height:1.6;color:#1c1d1d" style-hover="color:#af8431">419-345-7272</a>
+      </div>
+
+    </div>
+    <div style="max-width:1180px;margin:clamp(44px,5vw,72px) auto 0;padding-top:22px;border-top:1px solid #d8c9b8;display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px">
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:22px">
+        <span style="font-family:Avenir, sans-serif;font-weight:300;font-size:12px;letter-spacing:0.06em;color:#6c635b">© 2026 SUNSWEAT Studio</span>
+        <a href="#privacy-policy" style="font-family:Avenir, sans-serif;font-weight:300;font-size:12px;letter-spacing:0.06em;color:#6c635b" style-hover="color:#af8431">Privacy Policy</a>
+        <a href="#terms-of-service" style="font-family:Avenir, sans-serif;font-weight:300;font-size:12px;letter-spacing:0.06em;color:#6c635b" style-hover="color:#af8431">Terms of Service</a>
+      </div>
+      <span style="font-family:Avenir, sans-serif;font-weight:300;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:#6c635b">Strength in every season</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    this._bloom = setTimeout(() => this.setupBloom(), 60);
+  }
+  componentWillUnmount() {
+    clearTimeout(this._bloom);
+    if (this._io) this._io.disconnect();
+    if (this._sweep) window.removeEventListener('scroll', this._sweep);
+  }
+  setupBloom() {
+    const root = this.rootEl || document;
+    const nodes = Array.from(root.querySelectorAll('[data-bloom]'));
+    if (!nodes.length) return;
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) return;
+    const groups = new Map();
+    nodes.forEach(el => {
+      const mode = el.getAttribute('data-bloom');
+      const key = Math.round(el.getBoundingClientRect().top / 40);
+      const idx = groups.get(key) || 0;
+      groups.set(key, idx + 1);
+      el.style.willChange = 'transform, opacity, clip-path';
+      el.style.transition = 'transform 1150ms cubic-bezier(0.16,0.84,0.28,1) ' + (idx * 130) + 'ms, opacity 900ms ease ' + (idx * 130) + 'ms, clip-path 1250ms cubic-bezier(0.16,0.84,0.28,1) ' + (idx * 130) + 'ms';
+      el.style.opacity = '0';
+      if (mode === 'open') {
+        el.style.transform = 'scale(0.9)';
+        el.style.clipPath = 'circle(26% at 50% 62%)';
+      } else {
+        el.style.transform = 'translateY(26px) scale(0.97)';
+      }
+    });
+    const reveal = el => {
+      if (el.dataset.bloomDone) return;
+      el.dataset.bloomDone = '1';
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+      if (el.getAttribute('data-bloom') === 'open') el.style.clipPath = 'circle(90% at 50% 50%)';
+      if (this._io) this._io.unobserve(el);
+      setTimeout(() => { el.style.clipPath = ''; el.style.willChange = ''; }, 1600);
+    };
+    this._io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting || entry.boundingClientRect.bottom < 0) reveal(entry.target);
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+    nodes.forEach(el => this._io.observe(el));
+    this._sweep = () => {
+      nodes.forEach(el => {
+        const r = el.getBoundingClientRect();
+        if (r.bottom < 0 || r.top < window.innerHeight * 0.92) reveal(el);
+      });
+      if (nodes.every(el => el.dataset.bloomDone)) window.removeEventListener('scroll', this._sweep);
+    };
+    window.addEventListener('scroll', this._sweep, { passive: true });
+    this._sweep();
+  }
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
