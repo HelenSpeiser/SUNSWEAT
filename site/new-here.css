@@ -1,0 +1,111 @@
+/* SUNSWEAT — New Here page (loads after styles.css) */
+
+:root {
+  --hairline: #ddd0c1;
+  --numeral: #a2988d;
+  --sage-ink: #23302c;
+  --acc-body: #4a443e;
+}
+
+/* ---------- Hero: "WELCOME TO" + wordmark, vertically centred ---------- */
+.hero--welcome .hero__img { object-position: center 55%; }
+.hero--welcome .hero__shade {
+  background: linear-gradient(180deg, rgba(28, 29, 29, 0.32) 0%, rgba(28, 29, 29, 0.18) 45%, rgba(28, 29, 29, 0.05) 75%);
+}
+.hero--welcome .hero__content { justify-content: center; padding: 0 24px min(14vh, 120px); }
+.welcome { display: flex; flex-direction: column; align-items: center; gap: clamp(10px, 1.2vw, 20px); }
+.welcome__title {
+  font-family: var(--serif);
+  font-weight: 400;
+  color: #fff;
+  font-size: clamp(42px, 5.2vw, 84px);
+  line-height: 1.02;
+  letter-spacing: 0.005em;
+  text-shadow: 0 2px 28px rgba(28, 29, 29, 0.22);
+}
+.welcome__logo {
+  height: clamp(32px, 3.9vw, 60px);
+  width: auto;
+  max-width: 100%;
+  filter: drop-shadow(0 2px 20px rgba(28, 29, 29, 0.28));
+}
+
+/* ---------- Section heading (eyebrow + serif title) ---------- */
+.nh-heading { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; }
+.nh-heading__eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.32em; text-transform: uppercase; color: var(--gold); }
+.nh-heading__title { font-family: var(--serif); font-weight: 200; font-size: clamp(30px, 3.4vw, 48px); line-height: 1.2; color: var(--ink); }
+
+/* ---------- Your first class ---------- */
+.first-class { background: var(--bg); padding: clamp(64px, 7vw, 104px) clamp(24px, 5vw, 88px) clamp(40px, 4.6vw, 64px); }
+.first-class__inner { max-width: 1180px; margin: 0 auto; display: flex; flex-direction: column; gap: clamp(34px, 4vw, 56px); }
+.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(18px, 2.4vw, 40px); }
+.step { display: flex; flex-direction: column; gap: 10px; padding-top: 22px; border-top: 1px solid var(--hairline); }
+.step__num { font-weight: 400; font-size: 11.5px; letter-spacing: 0.2em; color: var(--numeral); }
+.step__title { font-family: var(--serif); font-weight: 400; font-size: clamp(21px, 2vw, 27px); letter-spacing: 0.03em; color: var(--ink); }
+.step__text { font-weight: 300; font-size: 14.5px; line-height: 1.75; color: var(--muted); text-wrap: pretty; }
+
+/* ---------- What to wear / bring ---------- */
+.prep { background: var(--bg); padding: 0 clamp(24px, 5vw, 88px) clamp(20px, 2.4vw, 34px); }
+.prep__grid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: clamp(20px, 2.4vw, 34px);
+}
+.prep__card { background: var(--sage); border-radius: 14px; padding: clamp(28px, 3vw, 44px); display: flex; flex-direction: column; gap: 12px; }
+.prep__title { font-family: var(--serif); font-weight: 400; font-size: clamp(22px, 2.2vw, 30px); letter-spacing: 0.04em; color: var(--ink); }
+.prep__text { font-weight: 300; font-size: 15px; line-height: 1.72; color: var(--sage-ink); text-wrap: pretty; }
+
+/* ---------- What to expect ---------- */
+.expect { background: var(--bg); padding: 0 clamp(24px, 5vw, 88px) clamp(72px, 8vw, 112px); }
+.expect__panel { max-width: 1180px; margin: 0 auto; background: var(--sage); border-radius: 14px; padding: clamp(34px, 4vw, 60px); }
+.expect__title { font-family: var(--serif); font-weight: 400; font-size: clamp(24px, 2.5vw, 34px); letter-spacing: 0.04em; color: var(--ink); margin: 0 0 clamp(22px, 2.4vw, 32px); }
+.expect__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: column;
+  gap: 14px clamp(28px, 3vw, 56px);
+}
+.bullet { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px; align-items: start; }
+.bullet__diamond { width: 9px; height: 9px; margin-top: 7px; }
+.bullet__text { font-weight: 300; font-size: 15px; line-height: 1.7; color: var(--sage-ink); }
+
+/* ---------- Accordion sections (The Studio / Etiquette / FAQ) ---------- */
+.faq-section { background: var(--bg); padding: 0 clamp(24px, 5vw, 88px) clamp(80px, 9vw, 124px); }
+.faq-section__inner { max-width: 900px; margin: 0 auto; }
+.faq-section__heading { margin-bottom: clamp(30px, 3.4vw, 48px); }
+
+.acc, .acc-end { border-top: 1px solid var(--hairline); }
+.acc__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: clamp(20px, 2.2vw, 28px) 0;
+  cursor: pointer;
+  list-style: none;
+}
+.acc__summary::-webkit-details-marker { display: none; }
+.acc__title { font-family: var(--serif); font-weight: 400; font-size: clamp(20px, 1.9vw, 26px); letter-spacing: 0.03em; color: var(--ink); }
+.acc-chevron { flex: 0 0 auto; transition: transform 220ms ease; }
+.acc[open] .acc-chevron { transform: rotate(180deg); }
+
+.acc__body { padding: 0 0 clamp(22px, 2.4vw, 30px); display: flex; flex-direction: column; gap: 14px; }
+.acc__body--plain { display: block; }
+.acc__text { font-weight: 300; font-size: 15px; line-height: 1.75; color: var(--acc-body); max-width: 74ch; text-wrap: pretty; }
+.acc__text--narrow { max-width: 70ch; }
+.acc__list { display: flex; flex-direction: column; gap: 12px; }
+.acc-bullet { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px; align-items: start; }
+.acc-bullet__diamond { width: 9px; height: 9px; margin-top: 8px; }
+.acc-bullet__text { font-weight: 300; font-size: 15px; line-height: 1.72; color: var(--acc-body); }
+
+/* ---------- Phone layout ---------- */
+@media (max-width: 760px) {
+  .steps { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .expect__grid { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; grid-auto-flow: row; }
+}
+@media (max-width: 760px) {
+  .welcome__logo { height: 26px; }
+}
